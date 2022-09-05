@@ -48,7 +48,7 @@ QEMU build for RHEL
 %install
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/%{_bindir}
-cp qemu_full $RPM_BUILD_ROOT/%{_bindir}/qemu-system-x86_64
+cp qemu-system-x86_64 $RPM_BUILD_ROOT/%{_bindir}/qemu-system-x86_64
 
 %clean
 rm -rf $RPM_BUILD_ROOT
