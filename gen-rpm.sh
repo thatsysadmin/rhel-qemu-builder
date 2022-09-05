@@ -73,10 +73,11 @@ mv qemu_full-0.0.1_bin.tar.gz ~/rpmbuild/SOURCES/
 
 # Use rpmbuild to build the RPM package.
 rpmlint ~/rpmbuild/SPECS/qemu_full.spec
-QA_RPATHS=$(( 0x0001|0x0010 )) rpmbuild -bb $RPMSPEC/qemu_full.spec
+#QA_RPATHS=$(( 0x0001|0x0010 )) 
+rpmbuild -bb $RPMSPEC/qemu_full.spec
 
 # Move RPM package into pickup location
-mv ~/rpmbuild/RPMS/x86_64/qemu_full-0.0.1-1.fc*.x86_64.rpm /qemu_full/qemu_full.rpm
+mv ~/rpmbuild/RPMS/x86_64/qemu_full-0.0.1-1.el*.x86_64.rpm /qemu_full/qemu_full.rpm
 
 # Clean up; delete the rpmbuild folder we created and move back the original one
 if [ "$RPMBUILDEXISTS" == "TRUE" ]; then
