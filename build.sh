@@ -7,4 +7,5 @@ echo "Runnning Configuration script"
 echo "Building"
 cd build 
 make -j4
-echo "Done."
+echo "Done. Building package."
+bash gen-rpm.sh
