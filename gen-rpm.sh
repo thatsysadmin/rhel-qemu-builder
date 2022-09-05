@@ -64,7 +64,7 @@ EOF
 # Copy over qemu_full binary and supplemental files into rpmbuild/BUILD/
 mkdir genrpm
 mkdir genrpm/qemu_full-0.0.1
-cp /qemu_full/qemu-7.1.0/build/qemu-system-x86_64 genrpm/qemu_full-0.0.1/qemu-system-x86_64
+cp /rhel-qemu-builder/qemu-*/build/qemu-system-x86_64 genrpm/qemu_full-0.0.1/qemu-system-x86_64
 cd genrpm
 
 # tarball everything as if it was a source file for rpmbuild
