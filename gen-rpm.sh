@@ -37,8 +37,6 @@ License:        GPLv3
 URL:            https://github.com/thatsysadmin/rhel-qemu-builder
 Source0:        qemu_full-0.0.1_bin.tar.gz
 
-Requires:       bash
-
 %description
 QEMU build for RHEL
 
