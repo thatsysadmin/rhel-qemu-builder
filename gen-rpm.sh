@@ -40,7 +40,7 @@ Source0:        qemu_full-0.0.1_bin.tar.gz
 Requires:       bash
 
 %description
-(h)top like task monitor for AMD and NVIDIA GPUs. It can handle multiple GPUs and print information about them in a htop familiar way.
+QEMU build for RHEL
 
 %prep
 %setup -q
@@ -69,7 +69,7 @@ cd genrpm
 
 # tarball everything as if it was a source file for rpmbuild
 tar --create --file qemu_full-0.0.1_bin.tar.gz qemu_full-0.0.1/
-mv qemu_full-0.0.1_bin.tar.gz ~/rpmbuild/SOURCES
+mv qemu_full-0.0.1_bin.tar.gz ~/rpmbuild/SOURCES/
 
 # Use rpmbuild to build the RPM package.
 rpmlint ~/rpmbuild/SPECS/qemu_full.spec
