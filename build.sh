@@ -7,5 +7,6 @@ echo "Runnning Configuration script"
 echo "Building"
 cd build 
 make -j4
-echo "Done. Building package."
-bash /rhel-qemu-builder/gen-rpm.sh
+#echo "Done. Building package."
+#bash /rhel-qemu-builder/gen-rpm.sh
+
