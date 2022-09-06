@@ -11,7 +11,7 @@ jobs:
       - name: Build
         run: docker run --name qemu_full_build qemu_full_build
       - name: Getting ready for delivery
-        run: mkdir ../artifacts;docker ps -a; docker cp qemu_full_build:/qemu_full/qemu_full.rpm ../artifacts; cd ../artifacts; ls; pwd
+        run: mkdir ../artifacts;docker ps -a; docker cp qemu_full_build:/rhel-qemu-builder/qemu-*/build/qemu-system-x86_64 ../artifacts; cd ../artifacts; ls; pwd
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
